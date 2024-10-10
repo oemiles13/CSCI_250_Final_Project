@@ -7,7 +7,6 @@ document.getElementById('demographics-form').addEventListener('submit', function
     const location = document.getElementById('location').value;
     const gender = document.getElementById('gender').value;
     const condition = document.getElementById('mental-health-condition').value;
-    const preferences = document.getElementById('preferences').value;
 
     document.getElementById('demographics-output').innerHTML = `
         <h3>Demographics Summary</h3>
@@ -18,7 +17,6 @@ document.getElementById('demographics-form').addEventListener('submit', function
         <p>Location: ${location}</p>
         <p>Gender: ${gender}</p>
         <p>Mental Health Condition: ${condition}</p>
-        <p>Preferences: ${preferences}</p>
     `;
 });
 
@@ -77,15 +75,14 @@ document.getElementById('support-form').addEventListener('submit', function(even
     event.preventDefault();
 
     const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phoneNumber = document.getElementById('phone').value;
     const issue = document.getElementById('issue').value;
 
-    if (name === '' || email === '' || message === '' || phoneNumber === '' || issue === '') {
+    if (name === '' || issue === '') {
         alert('Please fill in all fields');
         return;
     }
 
     // Simulate sending form data to server
-    alert(`Thank you, ${name}! Your message has been sent. We'll get back to you shortly regarding ${issue}`);
+    document.getElementById('support-response').textContent =
+    "Thank you, ${name}! Your message has been sent. Well get back to you shortly regarding ${issue}";
 });

@@ -39,7 +39,7 @@
             </div>
         </section>
 
-        <section id=""user-demographics>
+        <section id="user-demographics">
             <h2>User Demographics</h2>
             <form id="demographics-form">
                 <label for="name">Name:</label>
@@ -52,7 +52,7 @@
                 <input type="tel" id="phone" name="phone" required>
 
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" min="30" required>
+                <input type="number" id="age" name="age" max="30" required>
                 
                 <label for="gender">Gender:</label>
                 <select id="gender" name="gender" required>
@@ -119,12 +119,6 @@
             <form id="support-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
                 
                 <label for="issue">How can we help?</label>
                 <textarea id="issue" required></textarea>
