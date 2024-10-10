@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CCU Mental Health Support Platform</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>CCU Mental Health Support</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#support">Get Support</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h2>Welcome to our Mental Health Support Platform</h2>
+            <p>We're here to help you navigate through your mental health journey by
+               providing resources and support that will help you feel heard, 
+               understood, and supported.</p>
+        </section>
+
+        <section id="resources">
+            <h2>Mental Health Resources</h2>
+            <div id="resources-list">
+                <li><a class="link" href="https://www.healthline.com/health/mental-health/how-to-cope-with-anxiety">Managing Anxiety</a></li>
+                <li><a class="link" href="https://www.mindful.org/meditation/mindfulness-getting-started/">Mindfulness for Beginners</a></li>
+                <li><a class="link" href="https://www.helpguide.org/mental-health/depression/coping-with-depression">Dealing with Depression</a></li>
+            </div>
+            <div id="counselors">
+                <h2>Counselor Profiles</h2>
+                <div id="counselors-list"></div>
+            </div>
+        </section>
+
+        <section id=""user-demographics>
+            <h2>User Demographics</h2>
+            <form id="demographics-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="30" required>
+                
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value=""></option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="non-binary">Non-Binary</option>
+                    <option value="other">Prefer not to say</option>
+                </select>
+
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+
+                <label for="mental-health-condition">Mental Health Condition:</label>
+                
+                <input type="text" id="mental-health-condition" name="mental-health-condition" required>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="demographics-output"></div>
+        </section>
+
+        <section id="usage-patterns">
+            <h2>User Engagement</h2>
+            <div>
+                <label for="therapy-frequency">Virtual Therapy Sessions (per week):</label>
+                <input type="number" id="therapy-frequency" required>
+            </div>
+        
+            <div>
+                <label for="forum-participation">Forum Participation (posts per week):</label>
+                <input type="number" id="forum-participation" required>
+            </div>
+        
+            <div>
+                <label for="content-interactions">Interactions with Educational Content:</label>
+                <input type="number" id="content-interactions" required>
+            </div>
+        
+            <button id="submit-usage-patterns">Submit Usage Patterns</button>
+        
+            <div id="usage-patterns-output"></div>
+        </section>
+
+        <section id="session-data">
+            <h2>Session Data</h2>
+            <form id="session-form">
+                <label for="session-notes">Session Notes (Anonymized):</label>
+                <textarea id="session-notes" required></textarea>
+        
+                <label for="progress-update">Progress Update:</label>
+                <input type="text" id="progress-update" required>
+        
+                <label for="feedback">User Feedback:</label>
+                <textarea id="feedback" required></textarea>
+        
+                <button type="submit">Submit Session Data</button>
+            </form>
+        
+            <div id="session-output"></div>
+        </section>
+
+        <section id="support">
+            <h2>Get Support</h2>
+            <form id="support-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="issue">How can we help?</label>
+                <textarea id="issue" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+            <div id="support-response"></div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Mental Health Support. All rights reserved.</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
